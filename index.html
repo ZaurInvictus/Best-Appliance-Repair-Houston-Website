@@ -5,7 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Best Appliance Repair Houston</title>
+  <title>Best Appliance Repair Houston | Best Refrigerator Repair Houston</title>
+  <meta name="description" content="Best Appliance Repair Houston, your local and trusted appliance repair experts. Call Us For Same Day Appliance Repair, Refrigerator Repair, Washer Repair, Stove/Oven Repair and more."/>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Bootstrap core CSS -->
@@ -15,6 +16,17 @@
   <link href="assets/css/style.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-131411067-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-131411067-1');
+</script>
+
 </head>
 
 <body>
@@ -23,7 +35,7 @@
     <div class="container">
 
       <!-- Brand -->
-      <a class="navbar-brand" href="index.html">
+      <a class="navbar-brand" href="https://www.bestappliancerepairhouston.com">
       <img class="logo" src="assets/img/logo.png" alt="">
       </a>
 
@@ -39,7 +51,7 @@
         <!-- Left -->
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home
+            <a class="nav-link" href="https://www.bestappliancerepairhouston.com">Home
               <span class="sr-only">(current)</span>
             </a>
           </li>
@@ -48,18 +60,18 @@
             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true"
               aria-expanded="false">Services</a>
             <div class="dropdown-menu ">
-              <a class="dropdown-item " href="refrigerator-repair.html">Refrigerator Repair</a>
-              <a class="dropdown-item" href="washer-and-dryer-repair.html">Washer & Dryer Repair</a>
-              <a class="dropdown-item" href="stove-oven-repair.html">Stove & Oven Repair</a>
+              <a class="dropdown-item " href="refrigerator-repair">Refrigerator Repair</a>
+              <a class="dropdown-item" href="washer-and-dryer-repair">Washer & Dryer Repair</a>
+              <a class="dropdown-item" href="stove-oven-repair">Stove & Oven Repair</a>
 
             </div>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="reviews.html" ">Reviews</a>
+            <a class="nav-link" href="reviews">Reviews</a>
           </li>
           <li class=" nav-item">
-              <a class="nav-link" href="service-area.html">Service Area</a>
+              <a class="nav-link" href="service-area">Service Area</a>
           </li>
         </ul>
       
@@ -121,8 +133,9 @@
             </p>
 
             <a href="tel:+8328886929" class="btn btn-indigo btn-lg">
-              Click To Call
+              Call
               <i class="fa fa-phone ml-2" aria-hidden="true"></i>
+               (832) 888-6929
             </a>
 
           </div>
@@ -136,16 +149,14 @@
               <!--Card content-->
               <div class="card-body">
 
-
                 <!-- Form -->
 
-                <form action="https://formspree.io/mastertexappliance.com@gmail.com" method="POST">
-                  <!-- Heading -->
-                  <h3 class="dark-grey-text text-center">
+                <!-- <form action="https://formspree.io/mastertexappliance.com@gmail.com" method="POST">
+                  <input type="hidden" name="_cc" value="zaur.quliyev@email.com" /> -->
+                  <!-- <h3 class="dark-grey-text text-center">
                     <strong>Schedule Repair:</strong>
                   </h3>
                   <hr>
-
                   <div class="md-form">
                     <i class="fa fa-user prefix grey-text"></i>
                     <input type="text" name="name" required id="form3" class="form-control">
@@ -161,24 +172,64 @@
                     <textarea type="text" name="message" required id="form8" class="md-textarea"></textarea>
                     <label for="form8">Tell us about issue</label>
                   </div>
-
                   <div class="text-center">
                     <button type="submit" value="Send" class="btn btn-indigo">Send</button>
-
                   </div>
+                </form> -->
 
-                </form>
 
-              </div>
+      <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++= -->
+ 
+      <!-- PHP FORM -->
 
-            </div>
+      <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++= -->
 
-          </div>
-
+      <!-- Form -->
+      
+      <form action="mail.php" method="POST" enctype="multipart/form-data" role="form">
+        <input type="hidden" name="_cc" value="zaur.quliyev@email.com" />
+        <h3 class="dark-grey-text text-center">
+          <strong>Schedule Repair:</strong>
+        </h3>
+        <hr>
+        <div class="md-form">
+          <i class="fa fa-user prefix grey-text"></i>
+          <input type="text" name="name" required id="form3" class="form-control">
+          <label for="form3">Your name</label>
         </div>
+        <div class="md-form">
+          <i class="fa fa-phone prefix grey-text"></i>
+          <input type="number" name="number" required id="form3" class="form-control">
+          <label for="form3">Your number</label>
+        </div>
+        <div class="md-form">
+          <i class="fa fa-pencil prefix grey-text"></i>
+          <textarea type="text" name="message" required id="form8" class="md-textarea"></textarea >
+          <label for="form8">Tell us about issue</label>
+        </div>
+        <div class="text-center">
+          <button type="submit" value="Send" class="btn btn-indigo">Send</button>
+        </div>
+      </form>
 
+
+
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+
+
+
+
+
+        
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
     </div>
     <!-- Mask & flexbox options-->
 
@@ -227,7 +278,7 @@
                   timely, affordable, and quality work is our promise to you so feel free to give us a call or make an
                   online appointment if your refrigerator is not cooling or any other issue popped up.</p>
                 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                <button type="button" class="btn btn-light-blue btn-md"><a class="white-text" href="refrigerator-repair.html">Read
+                <button type="button" class="btn btn-light-blue btn-md"><a class="white-text" href="refrigerator-repair">Read
                     more</a></button>
 
               </div>
@@ -262,7 +313,7 @@
                   .”
                   Call us or make an online appointment for repair today.</p>
                 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                <button type="button" class="btn btn-light-blue btn-md"><a class="white-text" href="washer-and-dryer-repair.html">Read
+                <button type="button" class="btn btn-light-blue btn-md"><a class="white-text" href="washer-and-dryer-repair">Read
                     more</a></button>
 
               </div>
@@ -298,7 +349,7 @@
                   Best Appliance Repair works directly with most of the major manufacturers, and all the parts supplied
                   are original with a factory guarantee.</p>
                 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                <button type="button" class="btn btn-light-blue btn-md"><a class="white-text" href="stove-oven-repair.html">Read
+                <button type="button" class="btn btn-light-blue btn-md"><a class="white-text" href="stove-oven-repair">Read
                     more</a></button>
 
               </div>
@@ -333,7 +384,7 @@
                   Our technicians carry most of the parts with them to be able to provide same day repair service all
                   over Houston area.</p>
                 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                <button type="button" class="btn btn-light-blue btn-md"><a class="white-text" href="lg-appliance-repair-houston.html">Read
+                <button type="button" class="btn btn-light-blue btn-md"><a class="white-text" href="lg-appliance-repair-houston">Read
                     more</a></button>
 
               </div>
@@ -365,7 +416,7 @@
                   kind of GE appliances, whether it GE Refrigerator repair, Washer or Dryer repair.
                   Call us to schedule a professional service at the convenient time for the desired price.</p>
                 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                <button type="button" class="btn btn-light-blue btn-md"><a class="white-text" href="ge-appliance-repair-houston.html">Read
+                <button type="button" class="btn btn-light-blue btn-md"><a class="white-text" href="ge-appliance-repair-houston">Read
                     more</a></button>
 
               </div>
@@ -398,7 +449,7 @@
                   Freezer repair, Samsung Ice Machine repair, Samsung Oven repair and many other Samsung appliances.
                   For fast and reliable Samsung appliance repair and service in the Houston area call us today!</p>
                 <!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-                <button type="button" class="btn btn-light-blue btn-md"><a class="white-text" href="samsung-appliance-repair-houston.html">Read
+                <button type="button" class="btn btn-light-blue btn-md"><a class="white-text" href="samsung-appliance-repair-houston">Read
                     more</a></button>
 
               </div>
@@ -575,14 +626,12 @@
 
     <!--Call to action-->
     <div class="pt-4">
-      <a class="btn btn-outline-white" data-toggle="modal" data-target="#register" role="button">Schedule Now
-        <i class="fa fa-calendar ml-2"></i>
-      </a>
       <a class="btn btn-outline-white" href="tel:+8328886929" role="button">
-
-        Call Us
-        <i class="fa fa-phone ml-2"></i>
+        Call Us  <i class="fa fa-phone ml-2"></i> (832) 888-6929
       </a>
+      <a class="btn btn-outline-white" data-toggle="modal" data-target="#register" role="button">Schedule Now
+          <i class="fa fa-calendar ml-2"></i>
+        </a>
     </div>
     <!--/.Call to action-->
 
@@ -619,6 +668,19 @@
   <!--/.Footer-->
 
   <!-- SCRIPTS -->
+  <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/5aafd7214b401e45400ddb93/default';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
   <!-- JQuery -->
   <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
   <!-- Bootstrap tooltips -->
