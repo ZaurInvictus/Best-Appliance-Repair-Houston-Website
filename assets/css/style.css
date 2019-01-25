@@ -70,10 +70,33 @@ body,
   padding: 0.2rem;
 }
 
+.reviews {
+  z-index: 100;
+}
 
  
 
-
+@media (max-width: 776px) {
+  .discount {
+    background-color:rgba(234, 238, 14, 0.993);
+    margin-top: 1rem;;
+  }
+  
+  .discount-text {
+    display: flex;
+    justify-content: center;
+    font-size: 1rem; 
+    font-weight: 500;
+    font-family: roboto;
+    color: #1C2331;
+    padding: 0.2rem;
+  }
+  
+  .reviews {
+    z-index: 100;
+  }
+  
+  }
 
 
 
