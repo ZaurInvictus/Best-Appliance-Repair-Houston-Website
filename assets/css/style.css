@@ -4,6 +4,10 @@ body,
 .view {
   height: 100%; }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
 @media (max-width: 740px) {
   .full-page-intro {
     height: 1000px; } }
