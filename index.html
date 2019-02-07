@@ -123,17 +123,17 @@
           <!--Grid column-->
           <div class="col-md-6 mb-0 white-text text-center text-md-left">
 
-            <h1 class="mt-1 mb-0 display-4 font-weight-bold" style="font-size: 3.3em">Best Appliance <br> Repair Houston </h1>
+            <h1 class="mt-1 mb-0 display-4 font-weight-bold" style="font-size: 3.3em">Top-Rated Appliance Repair Service</h1>
 
             <hr class="hr-light">
-
-            <p class="mb-2">
-              <strong style="font-size: 1.5em">$125 Fixed Price For Standard Repair + Parts.</strong>
+              <!-- Display None on Small Screens -->
+            <p class="mb-2 d-none d-md-block">
+              <strong style="font-size: 1.5em">$125 Fixed Price For Standard Repair + Parts</strong>
             </p>
 
-            <!-- <p class="mb-2 d-none d-md-block">
-              <strong>Call Us Or Make an Online Appointment!</strong>
-            </p> -->
+            <p class="mb-2">
+              <strong style="font-size: 1.5em">Same Day Service & Free Estimate With Repair</strong>
+            </p>
 
             <a href="tel:8328886929" class="btn btn-indigo btn-lg">
               Call
@@ -142,7 +142,7 @@
             </a>
 
             <div class="col-md-6 text-center review-star mr-5 fa-2x pr-3" aria-hidden="true">
-               <a href="reviews" class="amber-text">
+               <a href="#review-info" class="amber-text">
                   <i class="fa fa-star "></i>
                   <i class="fa fa-star "></i>
                   <i class="fa fa-star fa-spin"></i>
@@ -152,7 +152,7 @@
              </div>
 
             <div class="col-md-6 text-center ">
-                <a class="text-white" href="reviews"> <p class="mb-3">customer reviews</p> </a> 
+                <strong><a class="text-white" href="#review-info"> <p class="mb-3">customer reviews</p></a> </strong> 
             </div>
 
           </div>
@@ -164,7 +164,7 @@
             <div class="card">
 
               <!--Card content-->
-              <div class="card-body">
+              <div class="card-body >
 
                 <!-- Form Start-->
                <form action="https://formspree.io/bestappliancehouston@gmail.com" method="POST">
@@ -564,8 +564,7 @@
 
       <!-- Section: Features v.2 -->
 
-
-<section class="reviews">
+<section class="reviews" id="review-info">
     <h2 class="h2 text-center my-5 text-muted">What customers say about us?</h2>
      <!-- Review Stream -->
       <div class="gradeus-stream" data-review-limit="5" data-url="https://reviews.localbusinessally.com/bestappliancerepair/"></div><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.reviewmgr.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document, "script", "reviewmgr-wjs");</script>
@@ -573,7 +572,7 @@
      <!-- Review Us Button -->
       <button type="button" class="btn btn-light-blue btn-md ">   <a class="white-text" href="https://reviews.localbusinessally.com/bestappliancerepair/" class="reviewmgr-button" data-content="Review Us" data-replace="true">Review Us</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.reviewmgr.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document, "script", "reviewmgr-wjs");</script>
       </button>
-    </section>
+  </section>
 
     </div>
     <hr class="my-5">
@@ -707,6 +706,34 @@
     // Animations initialization
     new WOW().init();
   </script>
+
+  <script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
+
   <script>
     (function(doc) {
       var xtb = document.createElement("script");

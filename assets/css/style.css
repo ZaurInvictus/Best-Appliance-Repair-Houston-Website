@@ -10,7 +10,10 @@ body,
 
 @media (max-width: 740px) {
   .full-page-intro {
-    height: 1000px; } }
+    height: 1000px;
+   } 
+  }
+
 
 /* Half Page Carousel itself*/
 .carousel {

@@ -111,12 +111,25 @@
     
      <!--Jumbotron-->
      
-     <div class="jumbotron jumbotron-fluid" style="background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/houston-min.jpg'); background-repeat: no-repeat; background-size: cover;">
+     <div class="jumbotron jumbotron-fluid" style="background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/img/houston-min.jpg'); background-repeat: no-repeat; background-size: cover;">
       <div class="container mt-5 text-center text-white">
           <h1 class="display-4 h1-reponsive mb-4 mt-2 font-weight-bold text-center ">LG Appliance Repair Houston</h1>
           <p class="lead text-center ">
-              <strong>Trust Houston expert LG appliance technicians!</strong> 
-            </p>
+            <strong>$125 Fixed Price For Standard Repair + Parts. Trust Houston expert technicians!</strong>
+          </p>
+         
+          <div class="review-star fa-2x pr-3" aria-hidden="true">
+            <a href="#reviews-info" class="amber-text">
+               <i class="fa fa-star "></i>
+               <i class="fa fa-star "></i>
+               <i class="fa fa-star fa-spin"></i>
+               <i class="fa fa-star "></i>
+               <i class="fa fa-star "></i>
+            </a> 
+          </div>
+          <div>
+            <a class="text-white" href="#reviews-info"> <p class="mb-3">customer reviews</p> </a> 
+          </div>
           <div class="btn-group mt-4" role="group" aria-label="Callout buttons">
               <a href="tel:8328886929" class="btn btn-indigo btn-lg">
                   Call
@@ -375,11 +388,19 @@
 
       <!-- Section: Features v.2 -->
 
+      
+      <section class="reviews" id="reviews-info">
+        <h2 class="h2 text-center my-5 text-muted">What customers say about us?</h2>
+         <!-- Review Stream -->
+          <div class="gradeus-stream" data-review-limit="5" data-url="https://reviews.localbusinessally.com/bestappliancerepair/"></div><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.reviewmgr.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document, "script", "reviewmgr-wjs");</script>
+    
+         <!-- Review Us Button -->
+          <button type="button" class="btn btn-light-blue btn-md ">   <a class="white-text" href="https://reviews.localbusinessally.com/bestappliancerepair/" class="reviewmgr-button" data-content="Review Us" data-replace="true">Review Us</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.reviewmgr.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document, "script", "reviewmgr-wjs");</script>
+          </button>
+        </section>
+
     </div>
     <hr class="my-5">
-
-    
-
   </main>
   <!--Main layout-->
 
@@ -475,7 +496,7 @@
       <!--Copyright-->
       <div class="footer-copyright py-3">
         © 2018 Copyright:
-        <a href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"> Best Appliance Repair </a>
+        <a href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank">Best Appliance Repair </a>
       </div>
       <!--/.Copyright-->
   
@@ -509,6 +530,35 @@
     // Animations initialization
     new WOW().init();
   </script>
+
+//SMOOTH SCROLLING 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+</script>
 </body>
 
 </html>
