@@ -19,7 +19,7 @@
   <!-- Your custom styles (optional) -->
   <link href="assets/css/style.css" rel="stylesheet">
 
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- Global site tag (tag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-131411067-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -32,7 +32,7 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar" role="banner">
     <div class="container">
 
       <!-- Brand -->
@@ -75,7 +75,9 @@
               <a class="nav-link" href="service-area">Service Area</a>
           </li>
         </ul>
+        
       
+
         <!-- Right -->
         <ul class="navbar-nav nav-flex-icons">
 
@@ -105,9 +107,7 @@
   <!-- Navbar -->
 
   <!-- Full Page Intro -->
-  
   <!-- <div class="view full-page-intro" style="background-image: url('assets/img/houston-min.jpg'); background-repeat: no-repeat; background-size: cover;"> -->
-
   <div class="view full-page-intro" style="background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('assets/img/houston-min.jpg'); background-repeat: no-repeat; background-size: cover;">
 
     <!-- Mask & flexbox options-->
@@ -124,13 +124,12 @@
           <div class="col-md-6 mb-0 white-text text-center text-md-left">
 
             <h1 class="mt-1 mb-0 display-4 font-weight-bold" style="font-size: 3.3em">Top-Rated Appliance Repair Service</h1>
-
             <hr class="hr-light">
+
               <!-- Display None on Small Screens -->
             <p class="mb-2 d-none d-md-block">
               <strong style="font-size: 1.5em">$125 Fixed Price For Standard Repair + Parts</strong>
             </p>
-
             <p class="mb-2">
               <strong style="font-size: 1.5em">Same Day Service & Free Estimate With Repair</strong>
             </p>
@@ -140,7 +139,6 @@
               <i class="fa fa-phone ml-2" aria-hidden="true"></i>
                (832) 888-6929
             </a>
-
             <div class="col-md-6 text-center review-star mr-5 fa-2x pr-3" aria-hidden="true">
                <a href="#review-info" class="amber-text">
                   <i class="fa fa-star "></i>
@@ -150,13 +148,11 @@
                   <i class="fa fa-star "></i>
                </a> 
              </div>
-
             <div class="col-md-6 text-center ">
                 <strong><a class="text-white" href="#review-info"> <p class="mb-3">customer reviews</p></a> </strong> 
             </div>
-
           </div>
-        
+      
           <!--Grid column-->
 
           <div class="col-md-6 col-xl-5 mb-2 "> 
@@ -675,9 +671,14 @@
       <a href="https://mdbootstrap.com/bootstrap-tutorial/" target="_blank"> Best Appliance Repair </a>
     </div>
     <!--/.Copyright-->
-
   </footer>
   <!--/.Footer-->
+  
+    <!-- CALL NOW BUTTON -->
+    <a class="call-now" href="tel:8328886929">
+      <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2aWV3Qm94PSIwIDAgNjAgNjAiPjxwYXRoIGQ9Ik03LjEwNCAxNC4wMzJsMTUuNTg2IDEuOTg0YzAgMC0wLjAxOSAwLjUgMCAwLjk1M2MwLjAyOSAwLjc1Ni0wLjI2IDEuNTM0LTAuODA5IDIuMSBsLTQuNzQgNC43NDJjMi4zNjEgMy4zIDE2LjUgMTcuNCAxOS44IDE5LjhsMTYuODEzIDEuMTQxYzAgMCAwIDAuNCAwIDEuMSBjLTAuMDAyIDAuNDc5LTAuMTc2IDAuOTUzLTAuNTQ5IDEuMzI3bC02LjUwNCA2LjUwNWMwIDAtMTEuMjYxIDAuOTg4LTI1LjkyNS0xMy42NzRDNi4xMTcgMjUuMyA3LjEgMTQgNy4xIDE0IiBmaWxsPSIjMDA2NzAwIi8+PHBhdGggZD0iTTcuMTA0IDEzLjAzMmw2LjUwNC02LjUwNWMwLjg5Ni0wLjg5NSAyLjMzNC0wLjY3OCAzLjEgMC4zNWw1LjU2MyA3LjggYzAuNzM4IDEgMC41IDIuNTMxLTAuMzYgMy40MjZsLTQuNzQgNC43NDJjMi4zNjEgMy4zIDUuMyA2LjkgOS4xIDEwLjY5OWMzLjg0MiAzLjggNy40IDYuNyAxMC43IDkuMSBsNC43NC00Ljc0MmMwLjg5Ny0wLjg5NSAyLjQ3MS0xLjAyNiAzLjQ5OC0wLjI4OWw3LjY0NiA1LjQ1NWMxLjAyNSAwLjcgMS4zIDIuMiAwLjQgMy4xMDVsLTYuNTA0IDYuNSBjMCAwLTExLjI2MiAwLjk4OC0yNS45MjUtMTMuNjc0QzYuMTE3IDI0LjMgNy4xIDEzIDcuMSAxMyIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==" width="55">  
+  </a> 
+<!-- CALL NOW BUTTON ENDS -->
 
   <!-- SCRIPTS -->
   <!--Start of Tawk.to Script-->
@@ -743,6 +744,7 @@ $(document).ready(function(){
       document.getElementsByTagName("head")[0].appendChild(xtb);
     }())
  </script>
+
 </body>
 
 </html>
