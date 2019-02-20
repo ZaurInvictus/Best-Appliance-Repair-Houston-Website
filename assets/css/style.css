@@ -75,14 +75,14 @@ ul.a {
 }
 
 
-/* ROUND BUTTON */
+/* ROUND BUTTON CALL NOW*/
 @media only screen and (min-width: 650px) {
   .call-now {
     display: none;
   }
 }
 
- @media only screen and (max-width: 650px) {
+@media only screen and (max-width: 650px) {
   .call-now {
     display: block;
     position: fixed;
@@ -100,3 +100,29 @@ ul.a {
   }
 }
 
+/* ROUND BUTTON BOOK NOW*/
+
+@media only screen and (min-width: 650px) {
+  .book-now {
+    display: none;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .book-now {
+    display: block;
+    position: fixed;
+    text-decoration: none;
+    z-index: 9999;
+    width: 65px;
+    height: 65px;
+    border-radius: 80px;
+    border: 2px solid #fff;
+    bottom: 45px;
+    right: 9px;
+    color:cornsilk;
+    background-color: #1E93CC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
